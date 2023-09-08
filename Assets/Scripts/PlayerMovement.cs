@@ -8,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D coll;
     private float dirX;
 
+
     [SerializeField] float moveSpeed = 7f;
     [SerializeField] float jumpForce= 14f;
     [SerializeField] LayerMask jumpableGround;
     private enum MovementState { idle,running,jumping,falling};
+
+    [SerializeField] AudioSource jumpSoundEffect;
     
 
     // Start is called before the first frame update
@@ -30,7 +33,10 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2 (dirX*moveSpeed,rb.velocity.y);
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
-           rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        {
+            jumpSoundEffect.Play();
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
 
         UpdateAnimationState();
 
