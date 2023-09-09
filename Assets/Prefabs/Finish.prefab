@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8912894073211993540}
   - component: {fileID: 3309057245618539347}
   - component: {fileID: 2226209097654770020}
+  - component: {fileID: 1635139327234218311}
   m_Layer: 0
   m_Name: Finish
   m_TagString: Untagged
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.090473175, y: -0.4385593}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: 1.9998398, y: 2.7763655}
   m_EdgeRadius: 0
 --- !u!82 &3309057245618539347
 AudioSource:
@@ -240,3 +241,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 031f6fed0bb53f9449d74bf61a8b85bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finishSoundEffect: {fileID: 0}
+--- !u!95 &1635139327234218311
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5582669548394348743}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 625176ec3784e324798dee43514859c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
